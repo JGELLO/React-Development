@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+section {
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.App.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.App.dark-mode section {
+  background-color: #444;
+  color: #fff;
+}
+
+/* ... (existing styles) ... */
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background-color: #555;
+}
+
+/* ... (existing styles) ... */
+
+.profile-image {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.profile-image img {
+  width: 150px; /* Adjust the width as needed */
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* skills.js styling*/
+
+.skills {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 8px;
+}
+
+.skills a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.skills a:hover {
+  color: #0056b3; /* Hover color */
+}
