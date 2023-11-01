@@ -6,7 +6,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #000000;
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -85,6 +85,30 @@ button:hover {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* projects.js styling*/
+
+.projects {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  margin-bottom: 8px;
+}
+
 
 /* skills.js styling*/
 
