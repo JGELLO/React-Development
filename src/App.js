@@ -4,6 +4,7 @@ import Header from './Header';
 import About from './About';
 import Projects from './Projects';
 import Skills from './Skills';
+import Subskills from './Subskills';
 import Contact from './Contact';
 import Footer from './Footer'; // Import Footer component
 
@@ -34,6 +35,7 @@ const App = () => {
       <About />
       <Projects />
       <Skills />
+      <Subskills />
       <Contact />
       <Footer /> {/* Include Footer component */}
     </div>

@@ -119,6 +119,39 @@ button:hover {
   color: #0056b3; /* Hover color */
 }
 
+/* subkills.js styling*/
+
+.subskills {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subskills h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subskills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.subskills li {
+  margin-bottom: 8px;
+}
+
+.subskills a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.subskills a:hover {
+  color: #0056b3; /* Hover color */
+}
+
 .contact-container {
   background-color: #f9f9f9;
   padding: 40px;
