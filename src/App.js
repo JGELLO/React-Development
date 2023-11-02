@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
 import Contact from './Contact';
+import Tools from './Tools';
 import Footer from './Footer'; // Import Footer component
 
 import profileImage from './profile.png'; // Import your image file
@@ -37,6 +38,7 @@ const App = () => {
       <Skills />
       <Subskills />
       <Contact />
+      <Tools />
       <Footer /> {/* Include Footer component */}
     </div>
   );

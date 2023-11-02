@@ -130,7 +130,7 @@ button:hover {
 }
 
 .skills li {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .skills a {
@@ -163,17 +163,30 @@ button:hover {
 }
 
 .subskills li {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
-.subskills a {
-  color: #007bff; /* Link color */
-  text-decoration: none;
-  transition: color 0.3s ease;
+/* tools.js styling*/
+
+.tools {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.subskills a:hover {
-  color: #0056b3; /* Hover color */
+.tools h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tools ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tools li {
+  margin-bottom: 9px;
 }
 
 .contact-container {
