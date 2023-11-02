@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Your Portfolio Name</h1>
+  <h1>My Portfolio - In development</h1>
   <p>🚀 A stunning portfolio built with React and Three.js 🎨</p>
 </div>
 
@@ -53,4 +53,4 @@ Icons in this README are provided by [Feather Icons](https://feathericons.com/).
 <div align="center">
   <p>✨ Happy Coding! ✨</p>
 </div>
-```
+
