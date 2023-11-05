@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './Header';
 import About from './About';
-// import Navigation from './Navigations';
+// import Navigation from './Navigation';
 import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
