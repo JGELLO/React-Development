@@ -133,16 +133,6 @@ button:hover {
   margin-bottom: 9px;
 }
 
-.skills a {
-  color: #007bff; /* Link color */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.skills a:hover {
-  color: #0056b3; /* Hover color */
-}
-
 /* subkills.js styling*/
 
 .subskills {

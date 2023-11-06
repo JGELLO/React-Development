@@ -39,8 +39,8 @@ const App = () => {
       <Projects />
       <Skills />
       <Subskills />
-      <Contact />
       <Tools />
+      <Contact />
       <Footer /> {/* Include Footer component */}
     </div>
     

@@ -5,8 +5,10 @@ const Subskills = () => {
     <section className="subskills">
       <h2>Subskills</h2>
       <ul>
+
         <li>Typing Proficiency</li>
         <li>Photoshop</li>
+        
       </ul>
     </section>
   );
