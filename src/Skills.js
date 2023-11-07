@@ -16,9 +16,13 @@ const Skills = () => {
           <li>Framework/s</li>
           <li>• Laravel</li>
           <br></br>
+          <li>Library/s</li>
+          <li>• Reactjs</li>
+          <br></br>
           <li>Virtual Machines Distros</li>
           <li>• Manjaro</li>
           <li>• Arch Linux</li>
+          <li>• Fedora Linux</li>
           <br></br>
           <li>Database Management | API Handling</li>
           <li>• Mysql</li>

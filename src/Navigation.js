@@ -9,7 +9,6 @@ const Navigation = () => {
         <li><Link to="skills" smooth={true} duration={500}>Skills</Link></li>
         <li><Link to="subskills" smooth={true} duration={500}>Subskills</Link></li>
         <li><Link to="projects" smooth={true} duration={500}>Projects</Link></li>
-        <li><Link to="library" smooth={true} duration={500}>Library Used</Link></li>
         <li><Link to="tools" smooth={true} duration={500}>Tools</Link></li>
         {/* Add more navigation links as needed */}
       </ul>
