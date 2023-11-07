@@ -8,10 +8,13 @@ const Tools = () => {
         <li>Visual Studio Code</li>
         <li>Bash(GitHub)</li>
         <li>Visual Studio Code</li>
+        <li>Docker Launcher</li>
         <li>Notepad++</li>
         <li>GitHub Desktop</li>
         <li>Git</li>
-        <li>Wordpress</li>
+        <li>Npm</li>
+        <li>WordPress</li>
+        <li>WebFlow</li>
         <li>Postman</li>
         <li>DB Browser</li>
         <li>Xampp</li>
@@ -29,6 +32,7 @@ const Tools = () => {
         <li>Grand Center</li>
         <li>Samson</li>
         <li>C1</li>
+        
 
       </ul>
     </section>

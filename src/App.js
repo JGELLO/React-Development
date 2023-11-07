@@ -10,6 +10,7 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
 import Contact from './Contact';
+import Library from './Library';
 import Tools from './Tools';
 import Footer from './Footer'; // Import Footer component
 // import ThreeScene from './ThreeScene';
@@ -86,6 +87,9 @@ const App = () => {
           </Element>
           <Element name="tools">
             <Tools />
+          </Element>
+          <Element name="library">
+            <Library />
           </Element>
           {/* Add more sections as needed */}
 
