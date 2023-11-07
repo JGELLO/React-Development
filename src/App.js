@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
 import './App.css';
 import Header from './Header';
@@ -31,6 +31,28 @@ const App = () => {
     
   }; 
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const h2Element = document.querySelector('h2');
+      const scrollY = window.scrollY;
+
+      if (scrollY > 200) {
+        h2Element.classList.add('shake');
+      } else {
+        h2Element.classList.remove('shake');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array ensures the effect runs once after the initial render
+
+
+
   return (
     
     <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
@@ -56,10 +78,16 @@ const App = () => {
           <Element name="subskills">
             <Subskills />
           </Element>
+          <Element name="projects">
+            <Projects />
+          </Element>
           <Element name="tools">
             <Tools />
           </Element>
           {/* Add more sections as needed */}
+
+          <Contact />
+
           <ScrollToTopButton />
 
           

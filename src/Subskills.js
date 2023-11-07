@@ -6,7 +6,10 @@ const Subskills = () => {
       <h2>Subskills</h2>
       <ul>
 
-        <li>Typing Proficiency</li>
+        <li>Typing Proficiency</li> 
+        <img src={process.env.PUBLIC_URL + '/typee.gif'} alt="Example GIF" />
+        <br></br>
+        <br></br>
         <li>Photoshop</li>
         
       </ul>

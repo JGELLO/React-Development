@@ -86,6 +86,44 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* CSS Animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  /* 50% { transform: translateX(-5px); } */
+  /* 100% { transform: translateX(5px); } */
+}
+
+/* Apply the animation to h2 elements */
+/* h2.shake {
+  animation: shake 0.5s infinite;
+} */
+
+/* about.js styling*/
+
+.about {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  animation: shake 3s infinite;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about li {
+  margin-bottom: 8px;
+}
+
+
 /* projects.js styling*/
 
 .projects {
@@ -98,6 +136,7 @@ button:hover {
 .projects h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  animation: shake 3s infinite;
 }
 
 .projects ul {
@@ -122,6 +161,7 @@ button:hover {
 .skills h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  animation: shake 3s infinite;
 }
 
 .skills ul {
@@ -145,6 +185,7 @@ button:hover {
 .subskills h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  animation: shake 3s infinite;
 }
 
 .subskills ul {
@@ -168,6 +209,7 @@ button:hover {
 .tools h2 {
   font-size: 24px;
   margin-bottom: 10px;
+  animation: shake 3s infinite;
 }
 
 .tools ul {
@@ -179,10 +221,18 @@ button:hover {
   margin-bottom: 9px;
 }
 
+/* contact.js styling*/
+
 .contact-container {
   background-color: #f9f9f9;
   padding: 40px;
   text-align: center;
+}
+
+.contact h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  animation: shake 3s infinite;
 }
 
 .contact-heading {
@@ -272,4 +322,12 @@ nav ul li a.active {
 
 .scroll-to-top-button.visible {
   display: block;
+}
+
+/* gif css  */
+
+img {
+  max-width: 100%; /* Make sure the image doesn't exceed its original size */
+  height: auto; /* Maintain the aspect ratio of the image */
+  margin-top: 20px; /* Add some space above the image */
 }
