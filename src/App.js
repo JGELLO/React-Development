@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
 import './App.css';
-// import './ThreeScene.css';
 import Header from './Header';
 import About from './About';
 import { Element } from 'react-scroll';
@@ -13,6 +12,7 @@ import Contact from './Contact';
 import Tools from './Tools';
 import Footer from './Footer'; // Import Footer component
 // import ThreeScene from './ThreeScene';
+// import './ThreeScene.css';
 
 import profileImage from './profile.png'; // Import your image file
 
