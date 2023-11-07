@@ -214,3 +214,62 @@ button:hover {
 
 /* three.js styling */
 
+/* Navigation Container */
+nav {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Navigation List */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation List Items */
+nav ul li {
+  margin: 0;
+}
+
+/* Navigation Links */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect for Navigation Links */
+nav ul li a:hover {
+  background-color: #2980b9;
+  border-radius: 5px;
+}
+
+/* Active Link Styling */
+nav ul li a.active {
+  background-color: #2980b9;
+  border-radius: 5px;
+}
+
+/* Add these styles to your CSS file */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+}

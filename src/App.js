@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import ScrollToTopButton from './ScrollToTopButton';
 import './App.css';
 import Header from './Header';
 import About from './About';
-// import Navigation from './Navigation';
+import { Element } from 'react-scroll';
+import Navigation from './Navigation';
 import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
@@ -26,22 +28,46 @@ const App = () => {
 
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
-  };
+    
+  }; 
 
   return (
+    
     <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
       <button className="theme-toggle" onClick={toggleDarkMode}>
         {isDarkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
-      <Header />
-      <ProfileImage /> {/* Add the image component */}
-      <About />
-      <Projects />
-      <Skills />
-      <Subskills />
-      <Tools />
-      <Contact />
-      <Footer /> {/* Include Footer component */}
+
+        <Header />
+
+        <div>
+          
+          <Navigation />
+          <ProfileImage /> {/* Add the image component */}
+          <br></br>
+          <br></br>
+          <br></br>
+          <Element name="about">
+            <About />
+          </Element>
+          <Element name="skills">
+            <Skills />
+          </Element>
+          <Element name="subskills">
+            <Subskills />
+          </Element>
+          <Element name="tools">
+            <Tools />
+          </Element>
+          {/* Add more sections as needed */}
+          <ScrollToTopButton />
+
+          
+      
+        <Footer /> {/* Include Footer component */}
+
+        </div>
+
     </div>
     
   );
