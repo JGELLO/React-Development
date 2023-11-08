@@ -16,7 +16,6 @@ import Footer from './Footer'; // Import Footer component
 
 import profileImage from './profile.png'; // Import your image file
 
-
 const ProfileImage = () => {
   return (
     <div className="profile-image">

@@ -29,6 +29,17 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
+/* Heading Styles */
+h1, h2, h3 {
+  font-weight: bold;
+  color: #007bff; /* Heading text color */
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
 button {
   background-color: #333;
   color: #fff;
@@ -42,6 +53,18 @@ button {
 button:hover {
   background-color: #555;
 }
+
+/* Link Styles */
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+  color: #0056b3; /* Link color on hover */
+}
+/* css for darkmode  */
 
 .App.dark-mode {
   background-color: #333;
@@ -123,6 +146,9 @@ button:hover {
   margin-bottom: 8px;
 }
 
+.about a {
+  margin-bottom: 15px;
+}
 
 /* projects.js styling*/
 
