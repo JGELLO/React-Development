@@ -86,9 +86,10 @@ const App = () => {
           <Element name="tools">
             <Tools />
           </Element>
+          <Element name="contact">
+            <Contact />
+          </Element>
           {/* Add more sections as needed */}
-
-          <Contact />
 
           {/* <ThreeScene /> */}
 
