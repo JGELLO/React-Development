@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import ScrollToTopButton from './ScrollToTopButton';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import './App.css';
 import Header from './Header';
 import About from './About';
-import { Element } from 'react-scroll';
 import Navigation from './Navigation';
 import Projects from './Projects';
 import Skills from './Skills';
@@ -53,6 +53,14 @@ const App = () => {
     };
   }, []); // Empty dependency array ensures the effect runs once after the initial render
 
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  
+
 
 
   return (
@@ -62,35 +70,47 @@ const App = () => {
         {isDarkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
 
-        <Header />
+        
 
         <div>
-          
-          <Navigation />
-          <ProfileImage /> {/* Add the image component */}
-          
-          <br></br>
-          <br></br>
-          <br></br>
-          <Element name="about">
-            <About />
-          </Element>
-          <Element name="skills">
-            <Skills />
-          </Element>
-          <Element name="subskills">
-            <Subskills />
-          </Element>
-          <Element name="projects">
-            <Projects />
-          </Element>
-          <Element name="tools">
-            <Tools />
-          </Element>
-          <Element name="contact">
-            <Contact />
-          </Element>
-          {/* Add more sections as needed */}
+        <nav className={`navbar ${isMobileMenuOpen ? 'mobile' : ''}`}>
+      <div className="menu-toggle" onClick={toggleMobileMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <Header />
+      <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
+        <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800}>
+          About
+        </ScrollLink>
+        <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800}>
+          Skills
+        </ScrollLink>
+        <ScrollLink to="subskills" spy={true} smooth={true} offset={-70} duration={800}>
+          Subskills
+        </ScrollLink>
+        <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={800}>
+          Projects
+        </ScrollLink>
+        <ScrollLink to="tools" spy={true} smooth={true} offset={-70} duration={800}>
+          Tools
+        </ScrollLink>
+        <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={800}>
+          Contact
+        </ScrollLink>
+        
+      </div>
+    </nav>
+  
+  
+           <ProfileImage /> 
+           <About />
+           <Skills />
+           <Subskills />
+           <Projects />
+           <Tools />
+           <Contact />
 
           {/* <ThreeScene /> */}
 

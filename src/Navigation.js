@@ -1,37 +1,62 @@
 // Navigation.js
-import React, { useState } from 'react';
-import './Navigation.css'; // Import CSS for Navigation styles
+import React, { useState, useEffect } from 'react';
+import './Navigation.css';
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(true); // State to control menu visibility
 
   const handleToggle = () => {
-    setIsOpen(!isOpen);
+    setIsMobile(!isMobile);
   };
 
-  const handleSmoothScroll = (targetId) => {
-    const targetElement = document.getElementById(targetId);
-    window.scrollTo({
-      top: targetElement.offsetTop,
-      behavior: 'smooth',
-    });
-    setIsOpen(false); // Close the navigation menu after clicking a link
+  const handleMenuVisibility = () => {
+    setMenuVisible(!menuVisible); // Toggle menu visibility
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize(); // Initial check
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+      setIsMobile(false); // Close the mobile menu after clicking a link
+    }
   };
 
   return (
-    <div className={`navbar ${isOpen ? 'active' : ''}`}>
+    <div className={`navbar ${isMobile ? 'mobile' : ''}`}>
       <div className="menu-toggle" onClick={handleToggle}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      <div className={`menu ${isOpen ? 'active' : ''}`}>
+      <div className={`menu ${isMobile ? (menuVisible ? 'active' : 'hidden') : ''}`}>
         {/* Navigation links go here */}
-        <button onClick={() => handleSmoothScroll('home')}>Home</button>
-        <button onClick={() => handleSmoothScroll('about')}>About</button>
-        <button onClick={() => handleSmoothScroll('portfolio')}>Portfolio</button>
-        <button onClick={() => handleSmoothScroll('contact')}>Contact</button>
+        <button onClick={() => scrollToSection('home')}>Home</button>
+        <button onClick={() => scrollToSection('about')}>About</button>
+        <button onClick={() => scrollToSection('portfolio')}>Portfolio</button>
+        <button onClick={() => scrollToSection('contact')}>Contact</button>
       </div>
+      {isMobile && (
+        <div className="toggle-button" onClick={handleMenuVisibility}>
+          {menuVisible ? 'Minimize' : 'Maximize'} Menu
+        </div>
+      )}
     </div>
   );
 };
