@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
+// add css files here
+import './App.css';
+
+// scroll funcitonality 
 import ScrollToTopButton from './ScrollToTopButton';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-import './App.css';
+
 import Header from './Header';
 import About from './About';
-import Navigation from './Navigation';
+import Navigation from './Navigation'; // ignore warnings being used for mobile navbar
 import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
@@ -14,6 +18,8 @@ import Footer from './Footer'; // Import Footer component
 // import ThreeScene from './ThreeScene';
 // import './ThreeScene.css';
 
+
+// some indentions might be wonky
 import profileImage from './profile.png'; // Import your image file
 
 const ProfileImage = () => {
@@ -77,7 +83,7 @@ const App = () => {
 
     <Header />
     <br></br>
-
+    
       {/* navbar */}
       <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
             <br></br>
