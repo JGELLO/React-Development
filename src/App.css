@@ -76,7 +76,7 @@ button:hover {
 
 /* Link Styles */
 a {
-  color: #007bff; /* Link color */
+  color: #ffffff; /* Link color */
   text-decoration: none;
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }

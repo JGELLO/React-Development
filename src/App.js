@@ -59,47 +59,52 @@ const App = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  
-
-
-
   return (
     
+    // Darkmode toggle doesn't apply to navbar tho
     <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
       <button className="theme-toggle" onClick={toggleDarkMode}>
         {isDarkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
 
-        
-
         <div>
         <nav className={`navbar ${isMobileMenuOpen ? 'mobile' : ''}`}>
-      <div className="menu-toggle" onClick={toggleMobileMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
-      </div>
-      <Header />
+          <div className="menu-toggle" onClick={toggleMobileMenu}>
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
+
+    <Header />
+    <br></br>
+
+      {/* navbar */}
       <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
-        <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800}>
-          About
-        </ScrollLink>
-        <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800}>
-          Skills
-        </ScrollLink>
-        <ScrollLink to="subskills" spy={true} smooth={true} offset={-70} duration={800}>
-          Subskills
-        </ScrollLink>
-        <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={800}>
-          Projects
-        </ScrollLink>
-        <ScrollLink to="tools" spy={true} smooth={true} offset={-70} duration={800}>
-          Tools
-        </ScrollLink>
-        <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={800}>
-          Contact
-        </ScrollLink>
-        
+            <br></br>
+            <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800}>
+              About
+            </ScrollLink>
+            <br></br>
+            <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800}>
+              Skills
+            </ScrollLink>
+            <br></br>
+            <ScrollLink to="subskills" spy={true} smooth={true} offset={-70} duration={800}>
+              Subskills
+            </ScrollLink>
+            <br></br>
+            <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={800}>
+              Projects
+            </ScrollLink>
+            <br></br>
+            <ScrollLink to="tools" spy={true} smooth={true} offset={-70} duration={800}>
+              Tools
+            </ScrollLink>
+            <br></br>
+            <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={800}>
+              Contact
+            </ScrollLink>
+            <br></br>
       </div>
     </nav>
   
@@ -113,12 +118,9 @@ const App = () => {
            <Contact />
 
           {/* <ThreeScene /> */}
-
-          <ScrollToTopButton />
-
           
-      
           <Footer /> {/* Include Footer component */}
+          <ScrollToTopButton />
 
         </div>
 
