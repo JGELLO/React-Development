@@ -1,9 +1,35 @@
+/* Default styles for larger screens */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Additional responsive styles for even smaller screens, if needed */
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+}
+
 
 header {
   background-color: #000000;

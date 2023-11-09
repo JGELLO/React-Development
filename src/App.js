@@ -68,6 +68,7 @@ const App = () => {
           
           <Navigation />
           <ProfileImage /> {/* Add the image component */}
+          
           <br></br>
           <br></br>
           <br></br>
@@ -97,7 +98,7 @@ const App = () => {
 
           
       
-        <Footer /> {/* Include Footer component */}
+          <Footer /> {/* Include Footer component */}
 
         </div>
 
