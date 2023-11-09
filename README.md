@@ -47,10 +47,3 @@ Follow these steps to get started with this project:
 ## 🌟 Icons
 
 Icons in this README are provided by [Feather Icons](https://feathericons.com/). Check out their collection for more beautiful icons!
-
----
-
-<div align="center">
-  <p>✨ Happy Coding! ✨</p>
-</div>
-
