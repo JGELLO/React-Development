@@ -56,6 +56,7 @@ In the project directory, you can run the following scripts:
 ## Customize Your Portfolio
 
 Check the live Website here [ https://jgello.github.io/React-Pages/ ] do note some pages may or may not have been applied to this repo yet
+
 Feel free to customize the portfolio to make it your own. Update the content, add your projects, modify the styles, and personalize it to reflect your unique identity as a developer.
 
 ## Support
