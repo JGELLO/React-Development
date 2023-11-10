@@ -30,7 +30,7 @@ const ScrollToTopButton = () => {
 
   return (
     <div className={`scroll-to-top-button ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
-      Scroll To Top
+      Back to Top
     </div>
   );
 };

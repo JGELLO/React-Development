@@ -191,7 +191,15 @@ a:hover {
 }
 
 .projects li {
-  margin-bottom: 8px;
+  font-size: 15px;
+  margin-bottom: 9px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 
@@ -209,6 +217,10 @@ a:hover {
   margin-bottom: 10px;
   animation: shake 3s infinite;
 }
+.skills h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
 .skills ul {
   list-style: none;
@@ -216,7 +228,15 @@ a:hover {
 }
 
 .skills li {
+  font-size: 15px;
   margin-bottom: 9px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 /* subkills.js styling*/
@@ -233,6 +253,10 @@ a:hover {
   margin-bottom: 10px;
   animation: shake 3s infinite;
 }
+.subskills h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
 
 .subskills ul {
   list-style: none;
@@ -240,7 +264,15 @@ a:hover {
 }
 
 .subskills li {
+  font-size: 15px;
   margin-bottom: 9px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 /* tools.js styling*/
@@ -264,7 +296,15 @@ a:hover {
 }
 
 .tools li {
+  font-size: 15px;
   margin-bottom: 9px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
 /* contact.js styling*/
@@ -315,6 +355,8 @@ nav {
   background-color: #000000;
   color: white;
   padding: 10px 20px;
+  user-select: none; /* Disable text selection */
+  cursor: pointer; /* Show pointer cursor on hover for better user feedback */
 }
 
 /* Navigation List */
@@ -364,6 +406,8 @@ nav ul li a.active {
   cursor: pointer;
   display: none;
   transition: opacity 0.3s ease;
+  user-select: none; /* Disable text selection */
+  cursor: pointer; /* Show pointer cursor on hover for better user feedback */
 }
 
 .scroll-to-top-button.visible {

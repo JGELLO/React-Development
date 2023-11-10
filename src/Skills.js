@@ -5,34 +5,34 @@ const Skills = () => {
     <section className="skills">
       <h2>Skills</h2>
       <ul>
-        
-          <li>Programming/Markup Languages</li>
+          <h3>Programming/Markup Languages</h3>
+          <br></br>
           <li>• PHP</li>
           <li>• Html</li>
           <li>• Css</li>
           <li>• Javascript</li>
           <li>• C++</li>
           <br></br>
-          <li>Framework/s</li>
+          <h3>Framework/s</h3>
           <li>• Laravel</li>
           <br></br>
-          <li>Library/s</li>
+          <h3>Library/s</h3>
           <li>• Reactjs</li>
           <br></br>
-          <li>Virtual Machines Distros</li>
+          <h3>Virtual Machines Distros</h3>
           <li>• Manjaro</li>
           <li>• Arch Linux</li>
           <li>• Fedora Linux</li>
           <br></br>
-          <li>Database Management | API Handling</li>
+          <h3>Database Management | API Handling</h3>
           <li>• Mysql</li>
           <li>• Postman</li>
           <br></br>
-          <li>Photoshop/Image Manipulation</li>
+          <h3>Photoshop/Image Manipulation</h3>
           <li>• Adobe Photoshope</li>
           <li>• Canva</li>
           <br></br>
-          <li>Video Editing</li>
+          <h3>Video Editing</h3>
           <li>• Davinci Resolve Editor</li>
           <li>• Gimp</li>
 
