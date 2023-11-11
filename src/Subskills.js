@@ -9,7 +9,8 @@ const Subskills = () => {
         <h3>Photo Manipulation Skills</h3>
         <li>Photoshop</li>
         <h3>Misc. Skills</h3>
-        <li>Typing Proficiency<img src="/typee.gif" alt="Gif" /></li> 
+        <li>Typing Proficiency</li> 
+        <img gify src="/typee.gif" alt="Gif" />
 
         
       </ul>
