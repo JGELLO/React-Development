@@ -1,10 +1,12 @@
 import React from 'react';
 
+
 const Skills = () => {
   return (
     <section className="skills">
       <h2>Skills</h2>
       <ul>
+
           <h3>Programming/Markup Languages</h3>
           <br></br>
           <li>• PHP</li>
@@ -35,7 +37,6 @@ const Skills = () => {
           <h3>Video Editing</h3>
           <li>• Davinci Resolve Editor</li>
           <li>• Gimp</li>
-
 
       </ul>
     </section>

@@ -1,25 +1,24 @@
 import React, { useState, useEffect } from 'react';
-// add css files here
-import './App.css';
+import './App.css'; // Add CSS files here
 
-// scroll funcitonality 
-import ScrollToTopButton from './ScrollToTopButton';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-
+// Scroll functionality
+import { Link as ScrollLink } from 'react-scroll';
 import Header from './Header';
 import About from './About';
-import Navigation from './Navigation'; // ignore warnings being used for mobile navbar
+import Navigation from './Navigation'; // Ignore warnings, used for mobile navbar
 import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
 import Contact from './Contact';
 import Tools from './Tools';
 import Footer from './Footer'; // Import Footer component
+
+// Uncomment if you decide to use Three.js
 // import ThreeScene from './ThreeScene';
 // import './ThreeScene.css';
 
+import ScrollToTopButton from './ScrollToTopButton';
 
-// some indentions might be wonky
 import profileImage from './profile.png'; // Import your image file
 
 const ProfileImage = () => {
@@ -31,13 +30,16 @@ const ProfileImage = () => {
 };
 
 const App = () => {
-  
   const [isDarkMode, setDarkMode] = useState(false);
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode(!isDarkMode);
-    
-  }; 
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,21 +61,13 @@ const App = () => {
     };
   }, []); // Empty dependency array ensures the effect runs once after the initial render
 
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
-
   return (
-    
-    // Darkmode toggle doesn't apply to navbar tho
     <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
       <button className="theme-toggle" onClick={toggleDarkMode}>
         {isDarkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
 
-        <div>
+      <div>
         <nav className={`navbar ${isMobileMenuOpen ? 'mobile' : ''}`}>
           <div className="menu-toggle" onClick={toggleMobileMenu}>
             <div className="bar"></div>
@@ -81,59 +75,54 @@ const App = () => {
             <div className="bar"></div>
           </div>
 
-    <Header />
-    <br></br>
-    
-      {/* navbar */}
-      <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
-            <br></br>
+          <Header />
+          <br />
+
+          {/* Navbar */}
+          <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
+            <br />
             <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800}>
               About
             </ScrollLink>
-            <br></br>
+            <br />
             <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800}>
               Skills
             </ScrollLink>
-            <br></br>
+            <br />
             <ScrollLink to="subskills" spy={true} smooth={true} offset={-70} duration={800}>
               Subskills
             </ScrollLink>
-            <br></br>
+            <br />
             <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={800}>
               Projects
             </ScrollLink>
-            <br></br>
+            <br />
             <ScrollLink to="tools" spy={true} smooth={true} offset={-70} duration={800}>
               Tools
             </ScrollLink>
-            <br></br>
+            <br />
             <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={800}>
               Contact
             </ScrollLink>
-            <br></br>
+            <br />
+          </div>
+        </nav>
+
+        <ProfileImage />
+        <About />
+        <Skills />
+        <Subskills />
+        <Projects />
+        <Tools />
+        <Contact />
+
+        {/* <ThreeScene /> */}
+        
+        <Footer />
+        <ScrollToTopButton />
       </div>
-    </nav>
-  
-  
-           <ProfileImage /> 
-           <About />
-           <Skills />
-           <Subskills />
-           <Projects />
-           <Tools />
-           <Contact />
-
-          {/* <ThreeScene /> */}
-          
-          <Footer /> {/* Include Footer component */}
-          <ScrollToTopButton />
-
-        </div>
-
     </div>
-    
   );
 };
-
 
 export default App;
