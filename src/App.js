@@ -3,6 +3,7 @@ import './App.css'; // Add CSS files here
 
 // Scroll functionality
 import { Link as ScrollLink } from 'react-scroll';
+import { FiSun, FiMoon } from 'react-icons/fi'; // Import icons from react-icons library
 import Header from './Header';
 import About from './About';
 import Navigation from './Navigation'; // Ignore warnings, used for mobile navbar
@@ -63,9 +64,10 @@ const App = () => {
 
   return (
     <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
-      <button className="theme-toggle" onClick={toggleDarkMode}>
-        {isDarkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
+    {/* Dark mode toggle button with icons */}
+    <button className="theme-toggle" onClick={toggleDarkMode}>
+      {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+    </button>
 
       <div>
         <nav className={`navbar ${isMobileMenuOpen ? 'mobile' : ''}`}>
