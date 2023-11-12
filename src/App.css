@@ -76,13 +76,33 @@ button:hover {
 
 /* Link Styles */
 a {
-  color: #ffffff; /* Link color */
   text-decoration: none;
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
 
 a:hover {
   color: #0056b3; /* Link color on hover */
+}
+
+.App.dark-mode a {
+  color: rgb(253, 253, 255); /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.App.dark-mode a:hover {
+  color: #0056b3; /* Link color on hover */
+}
+
+
+.App.dark-mode{
+  background-color: #333;
+  color: #fff;
+}
+
+.App.dark-mode section {
+  background-color: #444;
+  color: #fff;
 }
 
 /* css for darkmode  */
@@ -429,3 +449,22 @@ img {
   height: auto; /* Maintain the aspect ratio of the image */
   margin-top: 20px; /* Add some space above the image */
 }
+/*
+.animated-icon {
+  animation: bounce 1s infinite; /* Example animation: bounce 
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+
+*/

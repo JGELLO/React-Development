@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { FiSun, FiMoon } from 'react-icons/fi'; // Import icons from react-icons library
 import Header from './Header';
 import About from './About';
-import Navigation from './Navigation'; // Ignore warnings, used for mobile navbar
+import Navigation from './Navigation'; // Ignore warnings, used also for mobile navbar
 import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
@@ -78,7 +78,8 @@ const App = () => {
           </div>
 
           <Header />
-          <br />
+          <br></br>
+         
 
           {/* Navbar */}
           <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
