@@ -79,10 +79,11 @@ a {
   text-decoration: none;
   transition: color 0.3s ease; /* Smooth color transition on hover */
 }
-
 a:hover {
   color: #0056b3; /* Link color on hover */
 }
+
+/* css for darkmode  */
 
 .App.dark-mode a {
   color: rgb(253, 253, 255); /* Link color */
@@ -105,7 +106,7 @@ a:hover {
   color: #fff;
 }
 
-/* css for darkmode  */
+
 
 .App.dark-mode {
   background-color: #333;
@@ -130,6 +131,7 @@ a:hover {
   z-index: 1;
   transition: background-color 0.3s ease, transform 0.3s ease;
   border-radius: 50%;
+  outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,8 +145,6 @@ a:hover {
 .dark-mode .theme-toggle {
   transform: rotate(180deg);
 }
-
-/* ... (existing styles) ... */
 
 .profile-image {
   text-align: center;
@@ -229,7 +229,6 @@ a:hover {
   align-items: center;
   transition: all 0.3s ease;
 }
-
 
 /* skills.js styling*/
 
