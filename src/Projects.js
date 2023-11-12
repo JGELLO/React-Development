@@ -5,9 +5,11 @@ const Projects = () => {
     <section className="projects">
       <h2>Projects</h2>
       <ul>
-        <li>Project 1: Description of Project 1</li>
-        <li>Project 2: Description of Project 2</li>
+        <li>Project 1: WordPress site for Company</li>
+        <li>Project 2: Reactjs Portfolio - In development</li>
+        <li>Project 3: React Native App - In development</li>
         {/* Add more projects as needed */}
+        
       </ul>
     </section>
   );
