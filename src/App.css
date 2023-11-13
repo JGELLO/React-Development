@@ -157,7 +157,7 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* CSS Animation */
+/* CSS Animation Text Shaking */
 @keyframes shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(5px); }
