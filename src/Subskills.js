@@ -11,7 +11,7 @@ const Subskills = () => {
         <br></br>
         <h3>Misc. Skills</h3>
         <li>Typing Proficiency</li> 
-        <img gify src="/typee.gif" alt="Gif" />
+        <img gify src="./typee.gif" alt="Gif" />
         <br></br>
         <h3>Effective Communication:</h3>
         <li>Clear and concise verbal and written communication.</li>
