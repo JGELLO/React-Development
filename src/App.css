@@ -155,15 +155,26 @@ a:hover {
   width: 150px; /* Adjust the width as needed */
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: shake1 5s infinite;
 }
 
 /* CSS Animation Text Shaking */
+
+/* For h2 animation */
 @keyframes shake {
   0% { transform: translateX(0); }
   25% { transform: translateX(5px); }
   /* 50% { transform: translateX(-5px); } */
   /* 100% { transform: translateX(5px); } */
 }
+
+/* Profile image animation */
+@keyframes shake1 {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+}
+
 
 /* Apply the animation to h2 elements */
 /* h2.shake {

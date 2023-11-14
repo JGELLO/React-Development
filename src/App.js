@@ -20,7 +20,7 @@ import Footer from './Footer'; // Import Footer component
 
 import ScrollToTopButton from './ScrollToTopButton';
 
-import profileImage from './profile.png'; // Import your image file
+import profileImage from './profile1.jpg'; // Import your image file
 
 const ProfileImage = () => {
   return (
@@ -78,7 +78,6 @@ const App = () => {
           </div>
 
           <Header />
-          <br></br>
          
 
           {/* Navbar */}
@@ -111,7 +110,12 @@ const App = () => {
           </div>
         </nav>
 
+        <br></br>
+        <br></br>
+        <br></br>
         <ProfileImage />
+        <br></br>
+        <br></br>
         <About />
         <Skills />
         <Subskills />
