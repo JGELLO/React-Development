@@ -1,3 +1,36 @@
+
+/* App.css */
+.App {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .App {
+  background-color: #222;
+  color: #fff;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle:hover {
+  background-color: #444;
+}
+
 /* Default styles for larger screens */
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -31,10 +64,19 @@ body {
 }
 
 header {
-  background-color: #000000;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -109,8 +151,6 @@ a:hover {
   color: #fff;
 }
 
-
-
 .App.dark-mode {
   background-color: #333;
   color: #fff;
@@ -123,7 +163,7 @@ a:hover {
 
 .theme-toggle {
   position: fixed;
-  top: 20px;
+  top: 30px;
   right: 20px;
   background-color: #333;
   color: #fff;
@@ -197,7 +237,6 @@ a:hover {
 .about h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  animation: shake 3s infinite;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -471,6 +510,14 @@ nav ul li a {
   font-weight: bold;
   padding: 10px 15px;
   transition: 0.3s ease;
+}
+
+.navbar.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust the z-index to make sure it's above other elements */
 }
 
 /* Hover Effect for Navigation Links */

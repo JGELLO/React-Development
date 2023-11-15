@@ -1,34 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Add CSS files here
-
-// Scroll functionality
-import { Link as ScrollLink } from 'react-scroll';
-import { FiSun, FiMoon } from 'react-icons/fi'; // Import icons from react-icons library
+import './App.css';
 import Header from './Header';
+import Navigation from './Navigation';
 import About from './About';
-import Navigation from './Navigation'; // Ignore warnings, used also for mobile navbar
 import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
 import Contact from './Contact';
 import Tools from './Tools';
-import Footer from './Footer'; // Import Footer component
-
-// Uncomment if you decide to use Three.js
-// import ThreeScene from './ThreeScene';
-// import './ThreeScene.css';
-
+import Footer from './Footer';
 import ScrollToTopButton from './ScrollToTopButton';
-
-import profileImage from './profile1.jpg'; // Import your image file
-
-const ProfileImage = () => {
-  return (
-    <div className="profile-image">
-      <img src={profileImage} alt="Profile" />
-    </div>
-  );
-};
 
 const App = () => {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -38,7 +19,8 @@ const App = () => {
     setDarkMode(!isDarkMode);
   };
 
-  const toggleMobileMenu = () => {
+  const toggleMobileMenu = (e) => {
+    e.stopPropagation();
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
@@ -56,79 +38,31 @@ const App = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // Empty dependency array ensures the effect runs once after the initial render
+  }, []);
 
   return (
     <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
-    {/* Dark mode toggle button with icons */}
-    <button className="theme-toggle" onClick={toggleDarkMode}>
-      {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
-    </button>
-
-      <div>
-        <nav className={`navbar ${isMobileMenuOpen ? 'mobile' : ''}`}>
-          <div className="menu-toggle" onClick={toggleMobileMenu}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
-
-          <Header />
-         
-
-          {/* Navbar */}
-          <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
-            <br />
-            <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800}>
-              About
-            </ScrollLink>
-            <br />
-            <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800}>
-              Skills
-            </ScrollLink>
-            <br />
-            <ScrollLink to="subskills" spy={true} smooth={true} offset={-70} duration={800}>
-              Subskills
-            </ScrollLink>
-            <br />
-            <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={800}>
-              Projects
-            </ScrollLink>
-            <br />
-            <ScrollLink to="tools" spy={true} smooth={true} offset={-70} duration={800}>
-              Tools
-            </ScrollLink>
-            <br />
-            <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={800}>
-              Contact
-            </ScrollLink>
-            <br />
-          </div>
-        </nav>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <ProfileImage />
-        <br></br>
-        <br></br>
-        <About />
-        <Skills />
-        <Subskills />
-        <Projects />
-        <Tools />
-        <Contact />
-
-        {/* <ThreeScene /> */}
-        
-        <Footer />
-        <ScrollToTopButton />
-      </div>
+      <button className="theme-toggle" onClick={toggleDarkMode}>
+        {/* Add dark mode icons here */}
+      </button>
+      <br></br>
+      <Navigation
+        isDarkMode={isDarkMode}
+        toggleDarkMode={toggleDarkMode}
+        isMobileMenuOpen={isMobileMenuOpen}
+        toggleMobileMenu={toggleMobileMenu}
+      />
+      <About />
+      <Skills />
+      <Subskills />
+      <Projects />
+      <Tools />
+      <Contact />
+      <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };

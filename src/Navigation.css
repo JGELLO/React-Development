@@ -1,17 +1,37 @@
 /* Navigation.css */
+
+/* Container for desktop navigation */
+.desktop-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Add your preferred padding value */
+}
+
 /* Styles for desktop navigation */
 .menu {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .menu button {
-  background: none;
+  background: transparent;
   border: none;
   cursor: pointer;
   font-size: 16px;
   color: #333;
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.menu button:hover {
+  color: #0056b3; /* Link color on hover */
+  background-color: rgba(0, 86, 179, 0.1); /* Light background color on hover */
 }
 
 /* Hamburger menu styles for mobile */
@@ -33,6 +53,7 @@
 @media (max-width: 500px) {
   .menu {
     display: none;
+    background-color: #030303;
   }
 
   .menu.active {
@@ -61,18 +82,12 @@
   }
 }
 
-/* Navigation.css */
-/* ... (Previous styles) */
-
-.menu.hidden {
-  display: none;
+/* Dark mode styles */
+.dark-mode .menu button {
+  color: #f9f9f9; /* Light text color in dark mode */
+  background-color: transparent;
 }
 
-.toggle-button {
-  cursor: pointer;
-  text-align: center;
-  color: #333;
-  font-size: 14px;
-  margin-top: 10px;
+.dark-mode .bar {
+  background-color: #f9f9f9; /* Light color for mobile menu icon in dark mode */
 }
-

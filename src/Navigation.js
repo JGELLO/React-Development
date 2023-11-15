@@ -1,17 +1,14 @@
-// Navigation.js
 import React, { useState, useEffect } from 'react';
+import { FiSun, FiMoon } from 'react-icons/fi';
+import { Link as ScrollLink } from 'react-scroll';
+
 import './Navigation.css';
 
-const Navigation = () => {
+const Navigation = ({ isDarkMode, toggleDarkMode, isMobileMenuOpen, toggleMobileMenu }) => {
   const [isMobile, setIsMobile] = useState(false);
-  const [menuVisible, setMenuVisible] = useState(true); // State to control menu visibility
 
   const handleToggle = () => {
     setIsMobile(!isMobile);
-  };
-
-  const handleMenuVisibility = () => {
-    setMenuVisible(!menuVisible); // Toggle menu visibility
   };
 
   useEffect(() => {
@@ -20,7 +17,7 @@ const Navigation = () => {
     };
 
     window.addEventListener('resize', handleResize);
-    handleResize(); // Initial check
+    handleResize();
 
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -34,29 +31,54 @@ const Navigation = () => {
         behavior: 'smooth',
         block: 'start',
       });
-      setIsMobile(false); // Close the mobile menu after clicking a link
+      setIsMobile(false);
     }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
     <div className={`navbar ${isMobile ? 'mobile' : ''}`}>
-      <div className="menu-toggle" onClick={handleToggle}>
+      <div className="menu-toggle" onClick={toggleMobileMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
       </div>
-      <div className={`menu ${isMobile ? (menuVisible ? 'active' : 'hidden') : ''}`}>
-        {/* Navigation links go here */}
-        <button onClick={() => scrollToSection('home')}>Home</button>
-        <button onClick={() => scrollToSection('about')}>About</button>
-        <button onClick={() => scrollToSection('portfolio')}>Portfolio</button>
-        <button onClick={() => scrollToSection('contact')}>Contact</button>
+      <button className="theme-toggle" onClick={toggleDarkMode}>
+        {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+      </button>
+      <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
+        <br></br>
+        <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800}>
+          About
+        </ScrollLink>
+        <br></br>
+        <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800}>
+          Skills
+        </ScrollLink>
+        <br></br>
+        <ScrollLink to="subskills" spy={true} smooth={true} offset={-70} duration={800}>
+          Subskills
+        </ScrollLink>
+        <br></br>
+        <ScrollLink to="projects" spy={true} smooth={true} offset={-70} duration={800}>
+          Projects
+        </ScrollLink>
+        <br></br>
+        <ScrollLink to="tools" spy={true} smooth={true} offset={-70} duration={800}>
+          Tools
+        </ScrollLink>
+        <br></br>
+        <ScrollLink to="contact" spy={true} smooth={true} offset={-70} duration={800}>
+          Contact
+        </ScrollLink>
+        <br></br>
       </div>
-      {isMobile && (
-        <div className="toggle-button" onClick={handleMenuVisibility}>
-          {menuVisible ? 'Minimize' : 'Maximize'} Menu
-        </div>
-      )}
     </div>
   );
 };

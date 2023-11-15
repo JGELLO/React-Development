@@ -1,9 +1,13 @@
 import React from 'react';
+import profileImage from './profile1.jpg'; // Import your image file
 
 const About = () => {
   return (
     <section className="about">
-      <h2>About Me</h2>
+      <div className="profile-image">
+      <img src={profileImage} alt="Profile" />
+      </div>
+      <h2>My Portfolio</h2>
       <p>
       Hello, I’m Angelo Cabaluna, and my life is a vibrant tapestry of passions and pursuits. By day, I’m a dedicated programmer, crafting elegant solutions to complex problems through code. But when the workday is done, I dive headfirst into a world of diverse life activities and hobbies. Whether it’s hiking in the great outdoors, mastering the art of photography, or playing a mean guitar riff, I’m always seeking new ways to enrich my life.
       </p>
