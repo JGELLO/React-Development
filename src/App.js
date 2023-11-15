@@ -6,7 +6,7 @@ import { Link as ScrollLink } from 'react-scroll';
 import { FiSun, FiMoon } from 'react-icons/fi'; // Import icons from react-icons library
 import Header from './Header';
 import About from './About';
-import Navigation from './Navigation'; // Ignore warnings, used for mobile navbar
+import Navigation from './Navigation'; // Ignore warnings, used also for mobile navbar
 import Projects from './Projects';
 import Skills from './Skills';
 import Subskills from './Subskills';
@@ -20,7 +20,7 @@ import Footer from './Footer'; // Import Footer component
 
 import ScrollToTopButton from './ScrollToTopButton';
 
-import profileImage from './profile.png'; // Import your image file
+import profileImage from './profile1.jpg'; // Import your image file
 
 const ProfileImage = () => {
   return (
@@ -78,7 +78,7 @@ const App = () => {
           </div>
 
           <Header />
-          <br />
+         
 
           {/* Navbar */}
           <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
@@ -109,8 +109,14 @@ const App = () => {
             <br />
           </div>
         </nav>
-
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <ProfileImage />
+        <br></br>
+        <br></br>
         <About />
         <Skills />
         <Subskills />
