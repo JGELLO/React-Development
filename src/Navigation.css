@@ -1,14 +1,13 @@
 /* Navigation.css */
 
 /* Container for desktop navigation */
-.desktop-nav {
+.navbar-desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px; /* Add your preferred padding value */
+  padding: 20px; /* Add your preferred padding value */
 }
 
-/* Styles for desktop navigation */
 .menu {
   display: flex;
   justify-content: space-around;
@@ -51,6 +50,10 @@
 
 /* Responsive styles for mobile */
 @media (max-width: 500px) {
+  .navbar-desktop {
+    display: none;
+  }
+
   .menu {
     display: none;
     background-color: #030303;
