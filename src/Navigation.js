@@ -6,7 +6,7 @@ import './Navigation.css';
 
 const Navigation = ({ isDarkMode, toggleDarkMode, isMobileMenuOpen, toggleMobileMenu }) => {
   const [isMobile, setIsMobile] = useState(false);
-
+// eslint-disable-next-line
   const handleToggle = () => {
     setIsMobile(!isMobile);
   };
@@ -23,7 +23,7 @@ const Navigation = ({ isDarkMode, toggleDarkMode, isMobileMenuOpen, toggleMobile
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
+// eslint-disable-next-line
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -34,7 +34,7 @@ const Navigation = ({ isDarkMode, toggleDarkMode, isMobileMenuOpen, toggleMobile
       setIsMobile(false);
     }
   };
-
+// eslint-disable-next-line
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
