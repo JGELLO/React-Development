@@ -13,6 +13,8 @@
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
+    "react-spring": "^9.7.3",
+    "react-use": "^17.4.0",
     "slick-carousel": "^1.8.1",
     "three": "^0.158.0",
     "typed.js": "^2.1.0",

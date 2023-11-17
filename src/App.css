@@ -264,6 +264,14 @@ a:hover {
   user-select: none;
 }
 
+.about li p {
+  margin: 0;
+}
+
+.about li:hover {
+  background-color: #f2f2f264; /* Add a background color on hover */
+}
+
 .about a {
   margin-bottom: 15px;
 }

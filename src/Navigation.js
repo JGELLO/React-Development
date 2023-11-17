@@ -53,7 +53,6 @@ const Navigation = ({ isDarkMode, toggleDarkMode, isMobileMenuOpen, toggleMobile
         {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
       </button>
       <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
-        <br></br>
         <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800}>
           About
         </ScrollLink>
