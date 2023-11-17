@@ -236,6 +236,7 @@ a:hover {
 
 .about h2 {
   font-size: 24px;
+  text-align: center;
   margin-bottom: 10px;
   -webkit-user-select: none;
   -moz-user-select: none;
