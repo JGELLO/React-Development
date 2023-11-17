@@ -4,6 +4,8 @@ import { DiJavascript1 } from "react-icons/di";
 import { SiManjaro, SiMysql, SiPostman, SiSqlite } from "react-icons/si";
 import { GrArchlinux } from "react-icons/gr";
 
+
+
 const Skills = () => {
   return (
     <section className="skills">
@@ -11,7 +13,6 @@ const Skills = () => {
       <ul>
 
           <h3>Programming/Markup Languages</h3>
-          <br></br>
           <li>
             <FaPhp size="30"/>
             <FaHtml5 size ="30" />

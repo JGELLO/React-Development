@@ -51,7 +51,7 @@ body {
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
-  .container {
+  .container { 
     padding: 10px;
   }
 }
@@ -249,7 +249,19 @@ a:hover {
 }
 
 .about li {
-  margin-bottom: 8px;
+  font-size: 15px;
+  margin-bottom: 9px;
+  margin-bottom: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .about a {
@@ -272,7 +284,6 @@ a:hover {
 .skills h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  animation: shake 3s infinite;
 }
 .skills h3 {
   font-size: 18px;
@@ -312,7 +323,6 @@ a:hover {
 .subskills h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  animation: shake 3s infinite;
 }
 .subskills h3 {
   font-size: 18px;
@@ -352,7 +362,6 @@ a:hover {
 .projects h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  animation: shake 3s infinite;
 }
 
 .projects ul {
@@ -388,7 +397,6 @@ a:hover {
 .tools h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  animation: shake 3s infinite;
 }
 
 .tools ul {

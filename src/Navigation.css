@@ -1,13 +1,10 @@
 /* Navigation.css */
 
 /* Container for desktop navigation */
-.navbar-desktop {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px; /* Add your preferred padding value */
+.navbar {
+  padding: 10px 20px; /* Adjust padding as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
 }
-
 .menu {
   display: flex;
   justify-content: space-around;
@@ -16,21 +13,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.menu button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  color: #333;
-  padding: 10px;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.menu button:hover {
-  color: #0056b3; /* Link color on hover */
-  background-color: rgba(0, 86, 179, 0.1); /* Light background color on hover */
 }
 
 /* Hamburger menu styles for mobile */
@@ -64,10 +46,10 @@
     flex-direction: column;
     position: absolute;
     top: 60px;
-    right: 0;
+    right: 20;
     background-color: #030303;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    box-shadow: 0 2px 5px rgb(252, 252, 252);
   }
 
   .menu.active button {
@@ -76,6 +58,8 @@
 
   .menu-toggle {
     display: flex;
+    justify-content: space-between;
+    align-items: left;
   }
 
   .navbar.mobile {
@@ -92,5 +76,5 @@
 }
 
 .dark-mode .bar {
-  background-color: #f9f9f9; /* Light color for mobile menu icon in dark mode */
+  background-color: #f1efef; /* Light color for mobile menu icon in dark mode */
 }

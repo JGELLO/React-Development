@@ -9,7 +9,6 @@ import Contact from './Contact';
 import Tools from './Tools';
 import Footer from './Footer';
 import ScrollToTopButton from './ScrollToTopButton';
-import Carousel from './Carousel';
 
 const App = () => {
   const [isDarkMode, setDarkMode] = useState(false);
@@ -49,7 +48,7 @@ const App = () => {
         {/* Add dark mode icons here */}
       </button>
       <br></br>
-      <Carousel />
+      
       <Navigation
         isDarkMode={isDarkMode}
         toggleDarkMode={toggleDarkMode}
