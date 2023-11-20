@@ -1,8 +1,9 @@
 import React from 'react';
 import { SiAdobephotoshop, SiSelenium, SiVisualstudio, SiWebflow } from "react-icons/si";
 import { DiWordpress } from "react-icons/di";
-import { FaAndroid, FaDocker, FaFigma, FaGit, FaGithub, FaJira, FaRaspberryPi } from "react-icons/fa";
+import { FaAndroid, FaDocker, FaFigma, FaGit, FaGithub, FaJira, FaRaspberryPi, FaUbuntu } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
+import { GiFedora } from "react-icons/gi";
 
 
 const Tools = () => {
@@ -32,6 +33,8 @@ const Tools = () => {
             <FaGit size = "30" />
             <FaJira size = "30" />
             <DiMongodb size = "30" />
+            <FaUbuntu size = "30" />
+            <GiFedora size = "30" />
           </li>
 
       </ul>
