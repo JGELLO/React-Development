@@ -316,6 +316,10 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.skills li:hover {
+  background-color: #f2f2f264; /* Add a background color on hover */
+}
+
 /* subkills.js styling*/
 
 .subskills {
@@ -355,6 +359,10 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.subskills li:hover {
+  background-color: #f2f2f264; /* Add a background color on hover */
+}
+
 /* projects.js styling*/
 
 .projects {
@@ -390,6 +398,10 @@ a:hover {
   transition: all 0.3s ease;
 }
 
+.projects li:hover {
+  background-color: #f2f2f264; /* Add a background color on hover */
+}
+
 /* tools.js styling*/
 
 .tools {
@@ -423,6 +435,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
+}
+
+.tools li:hover {
+  background-color: #f2f2f264; /* Add a background color on hover */
 }
 
 /* contact.js styling*/
@@ -494,6 +510,9 @@ a:hover {
   display: block; /* Display the text on hover */
 }
 
+.contact li:hover {
+  background-color: #f2f2f264; /* Add a background color on hover */
+}
 
 /* three.js styling */
 
