@@ -8,11 +8,11 @@ import { DiJavascript1 } from "react-icons/di";
 const Carousel = () => {
   const [currentItem, setCurrentItem] = useState(0);
   const items = [
-    { icon: <FaCode size={60} />, label: 'code' },
-    { icon: <FaCss3 size={60} />, label: 'css' },
-    { icon: <DiJavascript1 size={60} />, label: 'javascript' },
-    { icon: <FaFedora size={60} />, label: 'fedora' },
-    { icon: <FaReact size={60} />, label: 'react' },
+    { icon: <FaCode size={30} />, label: 'code' },
+    { icon: <FaCss3 size={30} />, label: 'css' },
+    { icon: <DiJavascript1 size={30} />, label: 'javascript' },
+    { icon: <FaFedora size={30} />, label: 'fedora' },
+    { icon: <FaReact size={30} />, label: 'react' },
   ];
 
   useEffect(() => {
