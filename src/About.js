@@ -8,7 +8,7 @@ const About = () => {
     const options = {
       strings: ['Learn, Develop, Deploy.... OH! Have fun of Course!'],
       typeSpeed: 50, // typing speed in milliseconds
-      backSpeed: 132, // backspacing speed in milliseconds
+      backSpeed: 50, // backspacing speed in milliseconds
       loop: true, // loop the animation
     };
 
