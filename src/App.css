@@ -9,28 +9,6 @@
   color: #fff;
 }
 
-.theme-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 1;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.theme-toggle:hover {
-  background-color: #444;
-}
-
 /* Default styles for larger screens */
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -163,8 +141,8 @@ a:hover {
 
 .theme-toggle {
   position: fixed;
-  top: 30px;
-  right: 20px;
+  top: 2px;
+  right: 2px;
   background-color: #333;
   color: #fff;
   border: none;

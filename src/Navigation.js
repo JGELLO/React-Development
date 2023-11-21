@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import { Link as ScrollLink } from 'react-scroll';
-
+import Carousel from './Carousel';
 import './Navigation.css';
 
 const Navigation = ({ isDarkMode, toggleDarkMode, isMobileMenuOpen, toggleMobileMenu }) => {
@@ -53,6 +53,7 @@ const Navigation = ({ isDarkMode, toggleDarkMode, isMobileMenuOpen, toggleMobile
         {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
       </button>
       <div className={`menu ${isMobileMenuOpen ? 'active' : ''}`}>
+        <Carousel />
         <ScrollLink to="about" spy={true} smooth={true} offset={-70} duration={800}>
           About
         </ScrollLink>

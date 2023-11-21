@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import LoadingScreen from './LoadingScreen'; // Replace this import with the actual path to your LoadingScreen component
 import './App.css';
 import Navigation from './Navigation';
 import About from './About';
@@ -11,58 +12,56 @@ import Footer from './Footer';
 import ScrollToTopButton from './ScrollToTopButton';
 
 const App = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false); // Define isDarkMode state
+
+  useEffect(() => {
+    // Simulate loading time
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   const toggleDarkMode = () => {
-    setDarkMode(!isDarkMode);
+    // Toggle dark mode state
+    setIsDarkMode(!isDarkMode);
   };
 
-  const toggleMobileMenu = (e) => {
-    e.stopPropagation();
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const h2Element = document.querySelector('h2');
-      const scrollY = window.scrollY;
-
-      if (scrollY > 200) {
-        h2Element.classList.add('shake');
-      } else {
-        h2Element.classList.remove('shake');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
-      <button className="theme-toggle" onClick={toggleDarkMode}>
-        {/* Add dark mode icons here */}
-      </button>
-      <br></br>
-      
-      <Navigation
-        isDarkMode={isDarkMode}
-        toggleDarkMode={toggleDarkMode}
-        isMobileMenuOpen={isMobileMenuOpen}
-        toggleMobileMenu={toggleMobileMenu}
-      />
-      <About />
-      <Skills />
-      <Tools />
-      <Subskills />
-      <Projects />
-      <Contact />
-      <Footer />
-      <ScrollToTopButton />
+    <div>
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
+        <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
+          <button className="theme-toggle" onClick={toggleDarkMode}>
+            {/* Add dark mode icons here */}
+          </button>
+          <br></br>
+
+          <Navigation
+            isDarkMode={isDarkMode}
+            toggleDarkMode={toggleDarkMode}
+            isMobileMenuOpen={isMobileMenuOpen}
+            toggleMobileMenu={toggleMobileMenu}
+          />
+          <About />
+          <Skills />
+          <Tools />
+          <Subskills />
+          <Projects />
+          <Contact />
+          <Footer />
+          <ScrollToTopButton />
+        </div>
+      )}
     </div>
   );
 };

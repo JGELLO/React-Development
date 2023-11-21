@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js'
 import profileImage from './profile1.jpg'; // Import your image file
-import Carousel from './Carousel';
-
 
 const About = () => {
   useEffect(() => {
@@ -30,7 +28,6 @@ const About = () => {
       </div>
       <h2>My Portfolio</h2>
       <li><p>Hi,👋I'm Angelo a dedicated developer passionate about crafting elegant and efficient solutions. Below, you'll find an overview of my skills and the tools I use to bring ideas to life.</p>
-      <Carousel />
       </li>
       
       <br></br>
