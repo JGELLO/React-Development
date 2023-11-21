@@ -4,6 +4,8 @@
 .navbar {
   padding: 10px 20px; /* Adjust padding as needed */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for a subtle effect */
+  font-size: 20px; /* Adjust font size as needed */
+  font-weight: bold; /* Make text thicker */
 }
 .menu {
   display: flex;
