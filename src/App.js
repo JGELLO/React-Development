@@ -45,7 +45,7 @@ const App = () => {
             {/* Add dark mode icons here */}
           </button>
           <br></br>
-
+          
           <Navigation
             isDarkMode={isDarkMode}
             toggleDarkMode={toggleDarkMode}

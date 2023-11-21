@@ -296,7 +296,7 @@ a:hover {
 
 .skills li:hover {
   background-color: #f2f2f264; /* Add a background color on hover */
-  transform: scale(1.05); /* Enlarge the icon on hover */
+  transform: scale(1.01); /* Enlarge the icon on hover */
 }
 
 /* subkills.js styling*/
@@ -418,7 +418,7 @@ a:hover {
 
 .tools li:hover {
   background-color: #f2f2f264; /* Add a background color on hover */
-  transform: scale(1.05); /* Enlarge the icon on hover */
+  transform: scale(1.01); /* Enlarge the icon on hover */
 }
 
 /* contact.js styling*/

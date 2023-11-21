@@ -6,7 +6,7 @@ const About = () => {
   useEffect(() => {
     // Initialize Typed.js
     const options = {
-      strings: ['Learn, Develop, Deploy.... OH! Have fun of Course! ;)'],
+      strings: ['Learn, Develop, Deploy.... OH! Have fun of Course!'],
       typeSpeed: 50, // typing speed in milliseconds
       backSpeed: 132, // backspacing speed in milliseconds
       loop: true, // loop the animation
