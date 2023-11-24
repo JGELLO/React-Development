@@ -5,6 +5,7 @@ import { SiManjaro, SiMysql, SiPostman, SiSqlite } from "react-icons/si";
 import { GrArchlinux } from "react-icons/gr";
 import { GiFedora } from 'react-icons/gi';
 import { MdOutlineCss } from 'react-icons/md';
+import { DiMongodb } from "react-icons/di";
 
 
 
@@ -24,11 +25,11 @@ const Skills = () => {
             <MdOutlineCss size = "30" />
           </li>
           <br></br> 
-          <h3>Framework/s</h3>
-          <li><FaLaravel size ="30" /></li>
-          <br></br>
-          <h3>Library/s</h3>
-          <li><FaReact size ="30" /></li>
+          <h3>Framework/Library/s</h3>
+          <li>
+            <FaLaravel size ="30" />
+            <FaReact size ="30" />
+          </li>
           <br></br>
           <h3>Virtual Machines Distros</h3>
           <li>
@@ -41,6 +42,7 @@ const Skills = () => {
           <h3>Database Management | API Handling</h3>
           <li>
             <SiMysql size ="30" />
+            <DiMongodb size = "30" />
             <SiPostman size ="30" />
             <SiSqlite size ="30" />
           </li>
