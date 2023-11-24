@@ -1,8 +1,10 @@
 import React from 'react';
-import { FaCode, FaCss3, FaFedora, FaHtml5, FaLaravel, FaPhp, FaReact } from 'react-icons/fa';
+import { FaCode, FaCss3, FaHtml5, FaLaravel, FaPhp, FaReact, FaUbuntu } from 'react-icons/fa';
 import { DiJavascript1 } from "react-icons/di";
 import { SiManjaro, SiMysql, SiPostman, SiSqlite } from "react-icons/si";
 import { GrArchlinux } from "react-icons/gr";
+import { GiFedora } from 'react-icons/gi';
+import { MdOutlineCss } from 'react-icons/md';
 
 
 
@@ -18,7 +20,8 @@ const Skills = () => {
             <FaHtml5 size ="30" />
             <FaCss3 size ="30" />
             <DiJavascript1 size = "30" />
-            <FaCode size ="30" />
+            <FaCode size = "30" />
+            <MdOutlineCss size = "30" />
           </li>
           <br></br> 
           <h3>Framework/s</h3>
@@ -31,7 +34,8 @@ const Skills = () => {
           <li>
             <SiManjaro size ="30" />
             <GrArchlinux size ="30" />
-            <FaFedora size ="30" />
+            <FaUbuntu size = "30" />
+            <GiFedora size = "30" />
           </li>
           <br></br>
           <h3>Database Management | API Handling</h3>
