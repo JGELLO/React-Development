@@ -2,7 +2,6 @@ import React from 'react';
 import { SiAdobephotoshop, SiAndroidstudio, SiSelenium, SiVisualstudio, SiWebflow } from "react-icons/si";
 import { DiWordpress } from "react-icons/di";
 import { FaDocker, FaFigma, FaGit, FaGithub, FaJira, FaRaspberryPi } from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
 
 const Tools = () => {
   return (
@@ -30,7 +29,6 @@ const Tools = () => {
           <li>
             <FaGit size = "30" />
             <FaJira size = "30" />
-            <DiMongodb size = "30" />
           </li>
 
       </ul>
