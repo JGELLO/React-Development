@@ -2,17 +2,18 @@
 
 import React, { useState, useEffect } from 'react';
 import './Carousel.css'; // Import the associated CSS file
-import { FaCode, FaCss3, FaFedora, FaReact } from 'react-icons/fa';
+import { FaCode, FaReact } from 'react-icons/fa';
 import { DiJavascript1 } from "react-icons/di";
+import { MdOutlineCss } from 'react-icons/md';
 
 const Carousel = () => {
   const [currentItem, setCurrentItem] = useState(0);
   const items = [
     { icon: <FaCode size={30} />, label: 'code' },
-    { icon: <FaCss3 size={30} />, label: 'css' },
     { icon: <DiJavascript1 size={30} />, label: 'javascript' },
-    { icon: <FaFedora size={30} />, label: 'fedora' },
+    { icon: <MdOutlineCss size={30} />, label: 'react' },
     { icon: <FaReact size={30} />, label: 'react' },
+   
   ];
 
   useEffect(() => {

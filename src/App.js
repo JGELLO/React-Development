@@ -20,7 +20,7 @@ const App = () => {
     // Simulate loading time
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timeout);
   }, []);
@@ -55,8 +55,8 @@ const App = () => {
           />
           <About />
           <Skills />
-          <Tools />
           <Subskills />
+          <Tools />
           <Projects />
           <Contact />
           <Footer />
