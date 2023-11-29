@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import LoadingScreen from './LoadingScreen'; // Replace this import with the actual path to your LoadingScreen component
 import './App.css';
+import LoadingScreen from './LoadingScreen'; // Replace this import with the actual path to your LoadingScreen component
 import Navigation from './Navigation';
 import About from './About';
 import Projects from './Projects';
