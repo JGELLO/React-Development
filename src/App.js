@@ -15,7 +15,7 @@ import ScrollToTopButton from './ScrollToTopButton';
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isDarkMode, setIsDarkMode] = useState(false); // Define isDarkMode state
-
+ 
   useEffect(() => {
     // Simulate loading time
     const timeout = setTimeout(() => {
