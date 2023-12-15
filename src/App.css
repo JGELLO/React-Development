@@ -340,6 +340,7 @@ a:hover {
 
 .subskills li:hover {
   background-color: #f2f2f264; /* Add a background color on hover */
+  transform: scale(1.01); /* Enlarge the icon on hover */
 }
 
 /* projects.js styling*/
