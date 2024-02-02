@@ -60,6 +60,10 @@ const Navigation = ({ isDarkMode, toggleDarkMode, isMobileMenuOpen, toggleMobile
           About
         </ScrollLink>
         <br></br>
+        <ScrollLink to="seo" spy={true} smooth={true} offset={-70} duration={800}>
+          SEO
+        </ScrollLink>
+        <br></br>
         <ScrollLink to="skills" spy={true} smooth={true} offset={-70} duration={800}>
           Skills
         </ScrollLink>

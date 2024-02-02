@@ -8,6 +8,7 @@ import Skills from './Skills';
 import Subskills from './Subskills';
 import Contact from './Contact';
 import Tools from './Tools';
+import SEOP from './SEOP';
 import Footer from './Footer';
 import ScrollToTopButton from './ScrollToTopButton';
 
@@ -54,6 +55,7 @@ const App = () => {
             toggleMobileMenu={toggleMobileMenu}
           />
           <About />
+          <SEOP />
           <Skills />
           <Subskills />
           <Tools />
