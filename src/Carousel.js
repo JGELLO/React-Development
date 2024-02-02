@@ -1,5 +1,3 @@
-// Carousel.js
-
 import React, { useState, useEffect } from 'react';
 import './Carousel.css'; // Import the associated CSS file
 import { FaCode, FaReact } from 'react-icons/fa';
