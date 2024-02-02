@@ -4,9 +4,11 @@ const SEO = () => {
   return (
     <section className="seo">
       <h2>SEO Information</h2>
-      <p>
-      SEO (Search Engine Optimization) enhances a website's visibility on search engine results pages (SERPs) through keyword optimization, content improvement, and technical enhancements. It drives organic traffic, boosts user engagement, and increases conversions by aligning with search engine algorithms. SEO is an ongoing process, requiring constant monitoring and adaptation to maintain and improve rankings, ultimately contributing to a website's success in the digital sphere
-      </p>
+      <li>
+        <p>
+        With a deep understanding of search engine algorithms and a knack for strategic optimization, I specialize in driving organic growth and maximizing online visibility through SEO. Armed with expertise in keyword research, on-page optimization, and technical SEO, I craft tailored strategies to propel businesses to the forefront of search engine results. Let's collaborate to unlock the power of SEO and elevate your online presence to new heights of success!
+        </p>
+      </li>
       <ul>
         <br></br>
       <h2><a href="https://stnicolasinn.com/" target="_blank" rel="noopener noreferrer">St. Nicolas Inn</a></h2>
@@ -26,31 +28,41 @@ const SEO = () => {
 <h3>Strategies Implemented:</h3>
 
 <li>
-  <p>
-    1. Keyword Research and Optimization:
-       - Conducted extensive keyword research to identify relevant search terms related to luxury accommodations and travel in the hotel's locality.
-       - Optimized website content, meta tags, and headers to incorporate target keywords strategically.
-    <br></br>
-    2. On-Page SEO Optimization:
-       - Implemented on-page SEO best practices to improve website structure, including optimizing URLs, meta descriptions, and image alt text.
-       - Ensured proper internal linking to enhance user experience and search engine crawlability.
-    <br></br>
-    3. Content Creation and Blogging:
-       - Developed a content strategy focused on creating engaging and informative blog posts related to travel tips, local attractions, and luxury hotel experiences.
-       - Produced high-quality content regularly to attract and engage the hotel's target audience.
-    <br></br>
-    4. Local SEO and Google My Business Optimization:
-       - Optimized St. Nicolas Inn's Google My Business profile with accurate business information, including location, contact details, and business hours.
-       - Implemented local SEO strategies, including local keyword optimization and obtaining positive reviews from satisfied guests.
-    <br></br>
-    5. Mobile Optimization:
-       - Ensured the hotel's website is fully optimized for mobile devices, providing a seamless browsing experience for users on smartphones and tablets.
-       - Implemented responsive design and optimized page speed to improve mobile performance.
-    <br></br>
-    6. Technical SEO Audits and Improvements:
-       - Conducted regular technical SEO audits to identify and address issues affecting website performance and search engine rankings.
-       - Implemented technical improvements, including fixing broken links, optimizing site speed, and resolving crawl errors.
-  </p>
+<p>
+        1. Keyword Research and Optimization:
+           - Conducted keyword research to identify relevant search terms.
+           - Optimized website content and meta tags strategically.
+
+        <br></br>
+
+        2. On-Page SEO Optimization:
+           - Implemented on-page SEO best practices.
+           - Optimized URLs, meta descriptions, and image alt text.
+
+        <br></br>
+
+        3. Content Creation and Blogging:
+           - Developed a content strategy focused on engaging blog posts.
+           - Produced high-quality content regularly.
+
+        <br></br>
+
+        4. Local SEO and Google My Business:
+           - Optimized Google My Business profile with accurate information.
+           - Implemented local SEO strategies and obtained positive reviews.
+
+        <br></br>
+
+        5. Mobile Optimization:
+           - Ensured the website is fully optimized for mobile devices.
+           - Implemented responsive design and optimized page speed.
+
+        <br></br>
+
+        6. Technical SEO Audits and Improvements:
+           - Conducted technical SEO audits to address website performance issues.
+           - Implemented technical improvements and resolved crawl errors.
+      </p>
 </li>
 
 <h3>Results Achieved:</h3>
