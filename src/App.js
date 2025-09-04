@@ -55,7 +55,6 @@ const App = () => {
             toggleMobileMenu={toggleMobileMenu}
           />
           <About />
-          <SEOP />
           <Skills />
           <Subskills />
           <Tools />
